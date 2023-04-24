@@ -53,12 +53,14 @@ command_answer = {
     "amoeba": ifLink,
     "tron": ifLink,
     "snake": ifLink,
+    "feladatok": ifLink,
 }
 links = {
     "github": "https://github.com",
     "amoeba": "./amoeba/index.html",
     "tron": "./tron/index.html",
-    "snake": "./snake/index.html"
+    "snake": "./snake/index.html",
+    "feladatok": "./feladatok/index.html",
 }
   
 window.addEventListener('focus', function() {
