@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>△ generator ÉÁ</title>
+
+    <style>
+
+        body {
+            background: url("bc.png");
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            color: #261442;
+        }
+
+        #main {
+            width: 100%;
+        }
+        #generator {
+            background: rgb(250, 245, 192);
+            width: 55%;
+            
+            text-align: center;
+            border: 10px rgb(29, 13, 117)  dashed;
+        }
+
+        table {
+            text-align: left;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px; margin-bottom: 50px;
+            
+        }
+        tr {
+            width: max-content;
+        }
+
+        .tdvonal {
+            border-right: 2px solid black;
+        }
+
+        td {
+            padding-right: 10px; padding-left: 10px;
+        }
+
+        canvas {
+            margin-bottom: 50px;
+        }
+        img {
+            border: 5px rgb(25, 82, 156)  double;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <center>
+        <div id="generator">
+            <h1>háromszög <span style="color: #cc2929; font-size: larger;">GENERÁTOR</span></h1>
+        
+            <div id="ter">
+                <div id="szamolas">
+                    <p>a oldal:</p>
+                    <input id="a" class="oldal" type="number"><br>
+                    <p>b oldal:</p>
+                    <input id="b" class="oldal" type="number"><br>
+                    <p>c oldal:</p>
+                    <input id="c" class="oldal" type="number"><br>
+                    <p>alpha szög:</p>
+                    <input id="A" class="szog" type="number"><br>
+                    <p>beta szög:</p>
+                    <input id="B" class="szog" type="number"><br>
+                    <p>gamma szög:</p>
+                    <input id="C" class="szog" type="number">
+                    <button onclick="calculateNew()">Számol!</button>
+                    <table>
+                        <tr>
+                            <td id="o1" class="tdvonal">0</td>
+                            <td id="sz1">0</td>
+                        </tr>
+                        <tr>
+                            <td id="o2" class="tdvonal">0</td>
+                            <td id="sz2">0</td>
+                        </tr>
+                        <tr>
+                            <td id="o3" class="tdvonal">0</td>
+                            <td id="sz3">0</td>
+                        </tr>
+                    </table>
+                    <h2 id="Naan"></h2>
+
+                </div>
+                
+                <canvas id="canvas" height="500" width="500">
+                </canvas>
+            </div>
+        </div>
+        </center>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
